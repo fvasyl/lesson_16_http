@@ -1,0 +1,18 @@
+# Customer Routings
+GET    /customers/:id      com.eleks.playhttp.controller.CustomerController.getCustomer(id: Long)
+GET    /customers          com.eleks.playhttp.controller.CustomerController.getAllCustomers
+POST   /customers          com.eleks.playhttp.controller.CustomerController.saveCustomer
+PUT    /customers          com.eleks.playhttp.controller.CustomerController.updateCustomer
+DELETE /customers/:id      com.eleks.playhttp.controller.CustomerController.deleteCustomer(id: Long)
+
+# Product Routings
+GET    /products/:id      com.eleks.playhttp.controller.ProductController.getProduct(id: Long)
+GET    /products          com.eleks.playhttp.controller.ProductController.getAllProducts
+POST   /products          com.eleks.playhttp.controller.ProductController.saveProduct
+DELETE /products/:id      com.eleks.playhttp.controller.ProductController.deleteProduct(id: Long)
+PUT    /products          com.eleks.playhttp.controller.ProductController.updateProduct
+
+# Order Routings
+GET    /orders/:id      com.eleks.playhttp.controller.OrderController.getOrder(id: Long)
+GET    /orders          com.eleks.playhttp.controller.OrderController.getAllOrders
+POST   /orders          com.eleks.playhttp.controller.OrderController.saveOrder
